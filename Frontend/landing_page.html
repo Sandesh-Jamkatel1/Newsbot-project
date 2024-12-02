@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsBot - Your AI News Assistant</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
                 <img src="logo.jpg" alt="NewsBot Logo">
-                <p class="newsbot-text">NewsBot</p>
+                <span class="newsbot-text">NewsBot</span>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How it Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" class="nav-button">Login</a></li>
+                    <li><a href="signup.html" class="nav-button highlight">Sign Up</a></li>
+                </ul>
+            </div>
+            <button class="mobile-menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
-            </label>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How it Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="login.html" class="login-btn">Login</a></li>
-                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
-            </ul>
+            </button>
         </nav>
     </header>
 
     <main>
         <section class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Stay Informed with AI-Powered News</h1>
+                <h1>Stay Informed with<br>AI-Powered News</h1>
                 <p>Get personalized news updates, summaries, and insights delivered straight to you</p>
                 <div class="hero-buttons">
                     <button class="primary-button">Get Started</button>
                     <button class="secondary-button">Watch Demo</button>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero.png" alt="AI News Assistant">
             </div>
         </section>
 
@@ -75,25 +75,25 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-image">
-                        <img src="images\signup.jpg" alt="Sign Up">
+                        <span class="step-number">1</span>
+                        <img src="images/signup.jpg" alt="Sign Up">
                     </div>
-                    <span class="step-number">1</span>
                     <h3>Sign Up</h3>
                     <p>Create your free account in seconds</p>
                 </div>
                 <div class="step">
                     <div class="step-image">
-                        <img src="images\topic_sel.jpg" alt="Select Topics">
+                        <span class="step-number">2</span>
+                        <img src="images/topic_sel.jpg" alt="Select Topics">
                     </div>
-                    <span class="step-number">2</span>
                     <h3>Select Topics</h3>
                     <p>Choose your interests and preferences</p>
                 </div>
                 <div class="step">
                     <div class="step-image">
+                        <span class="step-number">3</span>
                         <img src="images/Newsupdate.png" alt="Get Updates">
                     </div>
-                    <span class="step-number">3</span>
                     <h3>Get Updates</h3>
                     <p>Receive personalized news instantly</p>
                 </div>
@@ -101,16 +101,21 @@
         </section>
 
         <section id="contact" class="contact">
-            <div class="contact-content">
-                <h2>Ready to Transform Your News Experience?</h2>
-                <p>Join thousands of users who trust NewsBot for their daily news updates</p>
-                <form class="contact-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="primary-button">Get Started</button>
-                </form>
-            </div>
-            <div class="contact-image">
-                <img src="images/contact.png" alt="Contact Us">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2>Ready to Transform Your News Experience?</h2>
+                    <p>Join thousands of users who trust NewsBot for their daily news updates</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="primary-button">Get Started</button>
+                        </div>
+                        <p class="form-note">* We respect your privacy. No spam, ever.</p>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="images/contact.png" alt="Contact Us">
+                </div>
             </div>
         </section>
     </main>
@@ -119,22 +124,31 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NewsBot</h4>
-                <p>Your AI-powered news assistant</p>
+                <p>Your AI-powered news assistant that keeps you informed and ahead of the curve.</p>
             </div>
             <div class="footer-section">
-                <h4>Links</h4>
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#how-it-works">How it Works</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Connect</h4>
+                <h4>Connect With Us</h4>
                 <ul>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">LinkedIn</a></li>
                     <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>support@newsbot.ai</li>
+                    <li>1-800-NEWSBOT</li>
                 </ul>
             </div>
         </div>
